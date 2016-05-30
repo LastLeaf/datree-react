@@ -1,0 +1,35 @@
+{
+  "name": "datree-react",
+  "version": "0.1.3",
+  "description": "The react binding for datree.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec",
+    "coveralls": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LastLeaf/datree-react.git"
+  },
+  "author": "Boquan Fu <bqfu@163.com> (LastLeaf)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LastLeaf/datree-react/issues"
+  },
+  "homepage": "https://github.com/LastLeaf/datree-react#readme",
+  "dependencies": {
+    "datree": "0.1.3"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
+    "jsdom": "^9.2.0",
+    "mocha": "^2.5.3",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0"
+  }
+}
