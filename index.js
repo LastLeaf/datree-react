@@ -18,7 +18,7 @@ module.exports = {
         var self = this;
         self._datreeNode = datree.Node.create({
             source: self.datreeSource || undefined,
-            fields: self.datreeStates,
+            fields: self.datreeStates || {},
             update: function(){
                 self._datreeScheduleUpdate(false, this.path[0]);
             },
